@@ -1,0 +1,55 @@
+/* Custom CSS */
+
+/* Navbar */
+.navbar {
+    position: fixed; /* Menjadikan navbar posisi tetap */
+    top: 0; /* Meletakkan navbar di bagian paling atas layar */
+    width: 100%; /* Lebar navbar mengisi seluruh lebar layar */
+    z-index: 1000; /* Menentukan urutan lapisan (z-index) navbar di atas elemen lain */
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .navbar-nav .nav-link {
+    color: #ffffff !important; /* Warna teks navbar putih */
+}
+
+.navbar-transparent .navbar-nav .nav-link:hover {
+    color: #007bff !important; /* Warna teks pada nav-link menjadi biru saat dihover */
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url('gambar/wallpaperflare.com_wallpaper.jpg'); /* URL gambar latar belakang jumbotron */
+    background-size: cover; /* Menyesuaikan ukuran gambar agar mengisi seluruh jumbotron */
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    height: 100vh; /* Tinggi jumbotron sesuai dengan tinggi viewport */
+    display: flex; /* Menggunakan flexbox untuk menengahkan konten */
+    justify-content: center; /* Menengahkan konten secara horizontal */
+    align-items: center; /* Menengahkan konten secara vertikal */
+    padding: 0 20px; /* Menambahkan padding horizontal untuk konten */
+}
+
+.jumbotron .container {
+    position: relative; /* Membuat posisi kontainer relatif */
+    z-index: 1; /* Menjadikan kontainer di atas gambar latar belakang */
+}
+
+.jumbotron h1.display-3 {
+    font-size: 3.5rem; /* Menyesuaikan ukuran font untuk tampilan yang lebih baik */
+    margin-bottom: 2rem; /* Memberikan ruang di bawah judul */
+}
+
+.jumbotron p.lead {
+    font-size: 1.5rem; /* Menyesuaikan ukuran font untuk tampilan yang lebih baik */
+    margin-bottom: 3rem; /* Memberikan ruang di bawah deskripsi */
+}
+
+/* Carousel Item */
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
